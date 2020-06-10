@@ -77,4 +77,4 @@ install_webide = false
 allow_ips = ["0.0.0.0/0"]
 
 # The desired private IP address of this HANA database.
-private_ip_address_hdn = "10.97.0.6"
+private_ip_address_hdb = "10.97.0.6"
