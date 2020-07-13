@@ -5,8 +5,8 @@
 
 ## Setup
 The following Azure Objects are created during deployment
-- Resource Group : bdl-singleHANADevOp
-- Network : 10.97.0.0/21
+- Resource Group : bdlSingleHANADevOp
+- Network : 10.98.0.0/21
 - SAP SID : HV1
 
 The deployment uses a Service Principal for this task. Currently the service principal bdl_terraform is used.

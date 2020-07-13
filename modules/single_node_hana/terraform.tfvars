@@ -2,7 +2,7 @@
 az_region = "westeurope"
 
 # Name of resource group to deploy (example: "demo1")
-az_resource_group = "bdl-singleHANADevOps"
+az_resource_group = "bdlSingleHANADevOps"
 
 # Unique domain name for easy VM access (example: "hana-on-azure1")
 az_domain_name = "bdl-hana-ops"
@@ -77,4 +77,4 @@ install_webide = false
 allow_ips = ["0.0.0.0/0"]
 
 # The desired private IP address of this HANA database.
-private_ip_address_hdb = "10.97.0.6"
+private_ip_address_hdb = "10.98.0.6"
