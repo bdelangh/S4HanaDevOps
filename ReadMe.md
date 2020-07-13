@@ -8,9 +8,11 @@ The following Azure Objects are created during deployment
 - Resource Group : bdlSingleHANADevOp
 - Network : 10.98.0.0/21
 - SAP SID : HV1
-
-The deployment uses a Service Principal for this task. Currently the service principal bdl_terraform is used.
-[SPScripts](SPScripts) contains scripts to see the necessary environment variable for Terraform and Ansible when executing manual testing.
+- The deployment uses a Service Principal for this task. Currently the service principal bdl_terraform is used.
+- [SPScripts](SPScripts) contains scripts to see the necessary environment variable for Terraform and Ansible when executing manual testing.
+- Check Python version related to ansible : `ansible --version`
 
 ## Further Information
 * Tutorial on Azure DevOps and Terraform see [Automating infrastructure deployments in the Cloud with Terraform and Azure Pipelines](https://www.azuredevopslabs.com/labs/vstsextend/terraform/)
+
+
