@@ -70,7 +70,7 @@ variable "private_ip_address_windows_bastion" {
 }
 
 variable "private_ip_address_linux_bastion" {
-  default = "10.97.0.5"
+  default = "10.98.0.5"
 }
 
 variable "public_ip_allocation_type" {
@@ -235,6 +235,16 @@ variable "windows_bastion" {
 
 variable "linux_bastion" {
   description = "Whether or not you want a linux bastion host"
+  default     = false
+}
+
+variable "vnet_address_space" {
+  description = "Vnet Address space"
+  default     = false
+}
+
+variable "hdb_subnet_address_space" {
+  description = "HDB Subnet Address space"
   default     = false
 }
 

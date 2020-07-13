@@ -76,5 +76,11 @@ install_webide = false
 # Set this to be a list of the ip addresses that should be allowed by the NSG.
 allow_ips = ["0.0.0.0/0"]
 
+# Vnet Address space
+vnet_address_space = "10.98.0.0/21"
+
+# HDB Subnet Address space
+hdb_subnet_address_space = "10.98.0.0/24"
+
 # The desired private IP address of this HANA database.
 private_ip_address_hdb = "10.98.0.6"

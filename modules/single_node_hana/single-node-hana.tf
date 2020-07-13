@@ -4,17 +4,19 @@ provider "azurerm" {
 }
 
 module "common_setup" {
-  source            = "../common_setup"
-  allow_ips         = var.allow_ips
-  az_region         = var.az_region
-  az_resource_group = var.az_resource_group
-  existing_nsg_name = var.existing_nsg_name
-  existing_nsg_rg   = var.existing_nsg_rg
-  install_xsa       = var.install_xsa
-  sap_instancenum   = var.sap_instancenum
-  sap_sid           = var.sap_sid
-  use_existing_nsg  = var.use_existing_nsg
-  windows_bastion   = var.windows_bastion
+  source                   = "../common_setup"
+  allow_ips                = var.allow_ips
+  az_region                = var.az_region
+  az_resource_group        = var.az_resource_group
+  existing_nsg_name        = var.existing_nsg_name
+  existing_nsg_rg          = var.existing_nsg_rg
+  install_xsa              = var.install_xsa
+  sap_instancenum          = var.sap_instancenum
+  sap_sid                  = var.sap_sid
+  use_existing_nsg         = var.use_existing_nsg
+  vnet_address_space       = var.vnet_address_space
+  hdb_subnet_address_space = var.hdb_subnet_address_space
+  windows_bastion          = var.windows_bastion
 }
 
 module "create_hdb" {
